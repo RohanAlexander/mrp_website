@@ -1,4 +1,3 @@
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 # The config file is written using TOML, which stands for "Tom's Obvious,
 # Minimal Language". See: https://github.com/toml-lang/toml
@@ -22,8 +21,8 @@ publishDir = "docs"
 
 # These settings specify the title for your site, and the name of
 # the Hugo theme that it uses.
-title = "MRP Reading Group"
-theme = "hugo-calade"
+title = "A calade website"
+theme = "calade"
 
 # What format should the permalinks take?
 [permalinks]
@@ -46,16 +45,20 @@ theme = "hugo-calade"
     url = "/"
     weight = 1
 [[menu.main]]
-    name = "Code"
-    url = "/code/"
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.main]]
+    name = "Posts"
+    url = "/post/"
     weight = 3
 [[menu.main]]
-    name = "Participate"
-    url = "/participate/"
+    name = "Projects"
+    url = "/project/"
     weight = 4
 [[menu.main]]
-    name = "Schedule"
-    url = "/schedule/"
+    name = "Tags"
+    url = "/tags/"
     weight = 5
 
 
@@ -74,16 +77,16 @@ theme = "hugo-calade"
 # - "colorAccent2": default value for the second accent color (the "lowlight")
 
 [params]
-    #siteHeader = "header/banner.png"
+    siteHeader = "header/banner.png"
     siteProfile = "header/profile.png"
-    description = "Website for the MRP Reading Group"
-    footer = "We'd love to have you participate."
-    #twitterImage = "https://djnavarro.github.io/hugo-calade/header/caladown.png"
-    colorPage = "#1d3557"    # background colour
-    colorText = "#f1faee"    # main text colour
-    colorFade = "#e63946"    # faded text colour
-    colorAccent1 = "#a8dadc" # first accent colour ("highlight")
-    colorAccent2 = "#457b9d" # second accent colour ("lowlight")
+    description = "A website of one's own"
+    footer = "A footer of one's own"
+    twitterImage = "https://djnavarro.github.io/hugo-calade/header/caladown.png"
+    colorPage = "#333333"    # background colour
+    colorText = "#dddddd"    # main text colour
+    colorFade = "#888888"    # faded text colour
+    colorAccent1 = "#ff69b4" # first accent colour ("highlight")
+    colorAccent2 = "#ba68c8" # second accent colour ("lowlight")
 
 
 # additional settings
